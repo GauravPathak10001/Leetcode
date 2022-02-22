@@ -1,4 +1,6 @@
 #include<iostream>
+#include<vector>
+#include<map>
 using namespace std;
 int main(){
 int n;
@@ -14,9 +16,10 @@ m1[v1[i]]++;
 }
 map<int,int>::iterator it;
 for(it=m1.begin();it != m1.end();it++){
-cout<<m1->first<<"  "<<m1->second<<endl;
+cout<<it->first<<"  "<<it->second<<endl;
 }
 }
+
 
 // Time complexity: O(N).
 // hash map  vector.
